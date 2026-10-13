@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCA Student Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080b1b;color:#f5f3ff}
+nav{position:fixed;top:0;width:100%;padding:20px 8%;display:flex;justify-content:space-between;background:#0b1023;z-index:10;border-bottom:1px solid #292044}
+.logo{font-size:25px;font-weight:bold;color:#a78bfa}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+section{padding:100px 8%;scroll-margin-top:60px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;gap:35px;background:radial-gradient(circle at 80%,#30175a,transparent 45%)}
+h1{font-size:55px;margin:15px 0}
+h2{color:#a78bfa;margin-bottom:20px}
+p{color:#b6bad0;line-height:1.8}
+.purple{color:#a78bfa}
+button,.btn{display:inline-block;margin-top:20px;padding:12px 22px;border:0;border-radius:8px;background:#8b5cf6;color:white;text-decoration:none;cursor:pointer}
+.photo{width:260px;height:260px;border-radius:50%;border:6px solid #a78bfa;object-fit:cover;box-shadow:0 0 40px #8b5cf688;animation:float 4s infinite}
+.title{text-align:center;font-size:36px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{padding:25px;background:#11172d;border:1px solid #30264e;border-radius:15px;transition:.3s}
+.card:hover{transform:translateY(-8px);border-color:#a78bfa;box-shadow:0 8px 25px #8b5cf633}
+.card h3{color:#c4b5fd;margin-bottom:12px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.skills .card{text-align:center}
+ul{padding-left:20px;color:#b6bad0;line-height:2}
+input,textarea{width:100%;padding:13px;margin:8px 0;background:#080b1b;border:1px solid #41345e;border-radius:8px;color:white}
+footer{text-align:center;padding:25px;background:#0b1023;color:#a78bfa}
+.reveal{opacity:0;transform:translateY(25px);transition:.8s}
+.reveal.show{opacity:1;transform:translateY(0)}
+@keyframes float{50%{transform:translateY(-15px)}}
+@media(max-width:750px){
+ nav{padding:15px 5%;flex-wrap:wrap;gap:12px}
+ nav a{margin:4px;font-size:12px}
+ section{padding:85px 5%}
+ .hero{flex-direction:column-reverse;text-align:center;justify-content:center}
+ h1{font-size:38px}
+ .photo{width:200px;height:200px}
+ .grid,.skills{grid-template-columns:repeat(2,1fr)}
+ .title{font-size:29px}
+}
+@media(max-width:450px){.grid,.skills{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="logo">Laya.</div>
+ <div>
+  <a href="#home">Home</a><a href="#about">About</a>
+  <a href="#skills">Skills</a><a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+ </div>
+</nav>
+
+<section class="hero" id="home">
+ <div class="reveal">
+  <p class="purple">HELLO! WELCOME TO MY PORTFOLIO</p>
+  <h1>I'm <span class="purple">Laya</span></h1>
+  <h2>BCA Student | Web Developer</h2>
+  <p>Passionate about coding, creative design and building amazing digital experiences.</p>
+  <a class="btn" href="#projects">Explore My Projects ↗</a>
+  <a class="btn" href="#contact">Contact Me</a>
+ </div>
+ <img class="photo" src="laya.jpg" alt="My Photo">
+</section>
+
+<section id="about">
+ <h2 class="title reveal">About <span class="purple">Me</span></h2>
+ <div class="card reveal">
+  <h3>Hello, am laya!!!</h3>
+  <p>I am a Bachelor of Computer Applications (BCA) student interested in web development, software development and database management. I enjoy learning new technologies and creating useful applications. My goal is to become a skilled software developer.</p>
+  <br><p><b class="purple">Education:</b> BCA Student</p>
+  <p><b class="purple">Location:</b> Hosur</p>
+  <p><b class="purple">Career Goal:</b> Software Developer</p>
+ </div>
+</section>
+
+<section id="education">
+ <h2 class="title reveal">My <span class="purple">BCA </span></h2>
+ <div class="grid">
+  <div class="card reveal"><h3>BCA</h3><p>SVRFGC</p><p>2023–2026 (edit years)</p></div>
+  <div class="card reveal"><h3>Higher Secondary</h3><p>APS PU college</p><p>2021-2023 , 90%</p></div>
+  <div class="card reveal"><h3>SSLC</h3><p>Attibele public school</p><p>2020</p></div>
+ </div>
+</section>
+
+<section id="skills">
+ <h2 class="title reveal">Technical <span class="purple">Skills</span></h2>
+ <div class="skills">
+  <div class="card reveal"><h3>HTML5</h3><p>Web Structure</p></div>
+  <div class="card reveal"><h3>CSS3</h3><p>Styling & Animation</p></div>
+  <div class="card reveal"><h3>JavaScript</h3><p>Interactive Websites</p></div>
+  <div class="card reveal"><h3>Python</h3><p>Programming</p></div>
+  <div class="card reveal"><h3>Flask</h3><p>Backend Development</p></div>
+  <div class="card reveal"><h3>Node.js</h3><p>Server-side JavaScript</p></div>
+  <div class="card reveal"><h3>SQL</h3><p>Database Management</p></div>
+  <div class="card reveal"><h3>Java</h3><p>Object-Oriented Programming</p></div>
+ </div>
+</section>
+
+<section id="projects">
+ <h2 class="title reveal">My <span class="purple">Projects</span></h2>
+ <div class="grid">
+  <div class="card reveal"><h3>Personal Portfolio</h3><p>A responsive personal website showcasing my skills and achievements.</p><p class="purple">HTML · CSS · JavaScript</p></div>
+  <div class="card reveal"><h3>Task Manager</h3><p>An application concept for organizing tasks and tracking daily activities.</p><p class="purple">Python · Flask · SQL</p></div>
+  <div class="card reveal"><h3>Student Management</h3><p>A project concept to manage student records and academic information.</p><p class="purple">Java · SQL</p></div>
+ </div>
+</section>
+
+<section id="achievements">
+ <h2 class="title reveal">Achievements</h2>
+ <div class="grid">
+  <div class="card reveal"><h3>Certifications</h3><p> Python Basics - Infosys Springboard , Web Development -NPTEL</p></div>
+  <div class="card reveal"><h3>Academic Awards</h3><p>BCA 2nd Year , SVRFGC Certificate in college Fest</p></div>
+  <div class="card reveal"><h3>Workshops</h3><p>Attended AI Workshop and Code Debugging Event 2k24</p></div>
+ </div>
+</section>
+
+<section id="languages">
+ <h2 class="title reveal">Languages</h2>
+ <div class="grid">
+  <div class="card reveal"><h3>English</h3></div>
+  <div class="card reveal"><h3>Tamil</h3></div>
+  <div class="card reveal"><h3>Telugu</h3></div>
+ </div>
+</section>
+
+<section id="contact">
+ <h2 class="title reveal">Contact <span class="purple">Me</span></h2>
+ <div class="grid">
+  <div class="card reveal">
+   <h3>Let's Connect!</h3>
+   <p>Email: layar6746@gmail.com</p>
+   <p>GitHub: <a href="https://github.com/la345ya4" target="_blank">github.com/la345ya4</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCA Student Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080b1b;color:#f5f3ff}
+nav{position:fixed;top:0;width:100%;padding:20px 8%;display:flex;justify-content:space-between;background:#0b1023;z-index:10;border-bottom:1px solid #292044}
+.logo{font-size:25px;font-weight:bold;color:#a78bfa}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+section{padding:100px 8%;scroll-margin-top:60px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;gap:35px;background:radial-gradient(circle at 80%,#30175a,transparent 45%)}
+h1{font-size:55px;margin:15px 0}
+h2{color:#a78bfa;margin-bottom:20px}
+p{color:#b6bad0;line-height:1.8}
+.purple{color:#a78bfa}
+button,.btn{display:inline-block;margin-top:20px;padding:12px 22px;border:0;border-radius:8px;background:#8b5cf6;color:white;text-decoration:none;cursor:pointer}
+.photo{width:260px;height:260px;border-radius:50%;border:6px solid #a78bfa;object-fit:cover;box-shadow:0 0 40px #8b5cf688;animation:float 4s infinite}
+.title{text-align:center;font-size:36px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{padding:25px;background:#11172d;border:1px solid #30264e;border-radius:15px;transition:.3s}
+.card:hover{transform:translateY(-8px);border-color:#a78bfa;box-shadow:0 8px 25px #8b5cf633}
+.card h3{color:#c4b5fd;margin-bottom:12px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.skills .card{text-align:center}
+ul{padding-left:20px;color:#b6bad0;line-height:2}
+input,textarea{width:100%;padding:13px;margin:8px 0;background:#080b1b;border:1px solid #41345e;border-radius:8px;color:white}
+footer{text-align:center;padding:25px;background:#0b1023;color:#a78bfa}
+.reveal{opacity:0;transform:translateY(25px);transition:.8s}
+.reveal.show{opacity:1;transform:translateY(0)}
+@keyframes float{50%{transform:translateY(-15px)}}
+@media(max-width:750px){
+ nav{padding:15px 5%;flex-wrap:wrap;gap:12px}
+ nav a{margin:4px;font-size:12px}
+ section{padding:85px 5%}
+ .hero{flex-direction:column-reverse;text-align:center;justify-content:center}
+ h1{font-size:38px}
+ .photo{width:200px;height:200px}
+ .grid,.skills{grid-template-columns:repeat(2,1fr)}
+ .title{font-size:29px}
+}
+@media(max-width:450px){.grid,.skills{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="logo">MyPortfolio.</div>
+ <div>
+  <a href="#home">Home</a><a href="#about">About</a>
+  <a href="#skills">Skills</a><a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+ </div>
+</nav>
+
+<section class="hero" id="home">
+ <div class="reveal">
+  <p class="purple">HELLO! WELCOME TO MY PORTFOLIO</p>
+  <h1>I'm <span class="purple">Laya</span></h1>
+  <h2>BCA Student | Web Developer</h2>
+  <p>Passionate about coding, creative design and building amazing digital experiences.</p>
+  <a class="btn" href="#projects">Explore My Projects ↗</a>
+  <a class="btn" href="#contact">Contact Me</a>
+ </div>
+ <img class="photo" src="laya.jpg" alt="My Photo">
+</section>
+
+<section id="about">
+ <h2 class="title reveal">About <span class="purple">Me</span></h2>
+ <div class="card reveal">
+  <h3>Hello, I'm Your Name!</h3>
+  <p>I am a Bachelor of Computer Applications (BCA) student interested in web development, software development and database management. I enjoy learning new technologies and creating useful applications. My goal is to become a skilled software developer.</p>
+  <br><p><b class="purple">Education:</b> BCA Student</p>
+  <p><b class="purple">Location:</b> Hosur</p>
+  <p><b class="purple">Career Goal:</b> Software Developer</p>
+ </div>
+</section>
+
+<section id="education">
+ <h2 class="title reveal">My <span class="purple">Education</span></h2>
+ <div class="grid">
+  <div class="card reveal"><h3>BCA</h3><p>SVRFGC</p><p>2023–2026 (edit years)</p></div>
+  <div class="card reveal"><h3>APS PU college</h3><p>Your School Name</p><p>2021-2023 , 90%</p></div>
+  <div class="card reveal"><h3>Attibele public school</h3><p>Your School Name</p><p>2020 , 92%</p></div>
+ </div>
+</section>
+
+<section id="skills">
+ <h2 class="title reveal">Technical <span class="purple">Skills</span></h2>
+ <div class="skills">
+  <div class="card reveal"><h3>HTML5</h3><p>Web Structure</p></div>
+  <div class="card reveal"><h3>CSS3</h3><p>Styling & Animation</p></div>
+  <div class="card reveal"><h3>JavaScript</h3><p>Interactive Websites</p></div>
+  <div class="card reveal"><h3>Python</h3><p>Programming</p></div>
+  <div class="card reveal"><h3>Flask</h3><p>Backend Development</p></div>
+  <div class="card reveal"><h3>Node.js</h3><p>Server-side JavaScript</p></div>
+  <div class="card reveal"><h3>SQL</h3><p>Database Management</p></div>
+  <div class="card reveal"><h3>Java</h3><p>Object-Oriented Programming</p></div>
+ </div>
+</section>
+
+<section id="projects">
+ <h2 class="title reveal">My <span class="purple">Projects</span></h2>
+ <div class="grid">
+  <div class="card reveal"><h3>Personal Portfolio</h3><p>A responsive personal website showcasing my skills and achievements.</p><p class="purple">HTML · CSS · JavaScript</p></div>
+  <div class="card reveal"><h3>Task Manager</h3><p>An application concept for organizing tasks and tracking daily activities.</p><p class="purple">Python · Flask · SQL</p></div>
+  <div class="card reveal"><h3>Student Management</h3><p>A project concept to manage student records and academic information.</p><p class="purple">Java · SQL</p></div>
+ </div>
+</section>
+
+<section id="achievements">
+ <h2 class="title reveal">Achievements</h2>
+ <div class="grid">
+  <div class="card reveal"><h3>Certifications</h3><p>Python Basics - Infosys Springboard , Web Development -NPTEL</p></div>
+  <div class="card reveal"><h3>Academic Awards</h3><p>BCA 2nd Year , SVRFGC Certificate in college Fest</p></div>
+  <div class="card reveal"><h3>Workshops</h3><p>Attended AI Workshop and Code Debugging Event 2k24</p></div>
+ </div>
+</section>
+
+<section id="languages">
+ <h2 class="title reveal">Languages</h2>
+ <div class="grid">
+  <div class="card reveal"><h3>English</h3></div>
+  <div class="card reveal"><h3>Tamil</h3></div>
+  <div class="card reveal"><h3>Telugu</h3></div>
+ </div>
+</section>
+
+<section id="contact">
+ <h2 class="title reveal">Contact <span class="purple">Me</span></h2>
+ <div class="grid">
+  <div class="card reveal">
+   <h3>Let's Connect!</h3>
+   <p>Email: layar6746@gmail.com</p>
+   <p>GitHub: https://github.com/la345ya4</p>
+  </div>
+  <div class="card reveal">
+   <form id="contactForm">
+    <input id="name" placeholder="Laya" required>
+    <input id="email" placeholder="layar6746@gmail.com" required>
+    <input id="subject" placeholder="BCA" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message ↗</button>
+   </form>
+  </div>
+ </div>
+</section>
+
+<footer>Designed with ♥ by Laya | © <span id="2026"></span></footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => {
+  if(entry.isIntersecting){
+   entry.target.classList.add('show');
+   observer.unobserve(entry.target);
+  }
+ });
+},{threshold:0.1});
+
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById('contactForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value;
+ const email=document.getElementById('email').value;
+ const subject=document.getElementById('subject').value;
+ const message=document.getElementById('message').value;
+ const body=`Name: ${name}\nEmail: ${email}\n\n${message}`;
+ window.location.href='mailto:layar6746@gmail.com?subject='+
+ encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
+</p>
+  </div>
+  <div class="card reveal">
+   <form id="contactForm">
+    <input id="name" placeholder="Laya" required>
+    <input id="email" placeholder="layar6746@gmail.com" required>
+    <input id="subject" placeholder="BCA" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message ↗</button>
+   </form>
+  </div>
+ </div>
+</section>
+
+<footer>Designed with ♥ by Laya | © <span id="2026"></span></footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => {
+  if(entry.isIntersecting){
+   entry.target.classList.add('show');
+   observer.unobserve(entry.target);
+  }
+ });
+},{threshold:0.1});
+
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById('contactForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value;
+ const email=document.getElementById('email').value;
+ const subject=document.getElementById('subject').value;
+ const message=document.getElementById('message').value;
+ const body=`Name: ${name}\nEmail: ${email}\n\n${message}`;
+ window.location.href='mailto:layar6746@gmail.com?subject='+
+ encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
